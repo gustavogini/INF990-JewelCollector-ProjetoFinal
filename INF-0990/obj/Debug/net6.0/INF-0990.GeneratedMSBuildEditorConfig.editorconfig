@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = INF_0990
+build_property.ProjectDir = h:\Meu Drive\Tecnologias Microsoft INF-900 Extecamp\INF-0990 - Programação C#\Projeto Final\inf0990_final_project_csharp\INF-0990\

@@ -1,0 +1,161 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+
+
+Classe reponsável pelo Mapa.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_a2a52033bc07a7ccc160285a93484513e}{Map}} (int w=10, int h=10, int level=1)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_map}{Map}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_ad9a8360a0ab002fb9f53fe4811f8bb19}{Insert}} (\mbox{\hyperlink{class_item_map}{Item\+Map}} item, int x, int y)
+\begin{DoxyCompactList}\small\item\em Insere um item na posição especificada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a6559330c824d7967c0c6eb797583e4b9}{Update}} (int x\+\_\+old, int y\+\_\+old, int x, int y)
+\begin{DoxyCompactList}\small\item\em Atualiza a posição de um item no mapa. \end{DoxyCompactList}\item 
+\Hypertarget{class_map_a3d7dd6ac635c6198bddfa0c22dc73b76}\label{class_map_a3d7dd6ac635c6198bddfa0c22dc73b76} 
+\mbox{\hyperlink{class_item_map}{Item\+Map}} {\bfseries Get\+Item\+At} (int x, int y)
+\item 
+List$<$ \mbox{\hyperlink{class_jewel}{Jewel}} $>$ \mbox{\hyperlink{class_map_a503c1188981bd56583b4036ef70c67aa}{Get\+Jewels}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Obtém as joias próximas à posição especificada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_rechargeable}{Rechargeable}}? \mbox{\hyperlink{class_map_a58b5d5bdae42092eec6502666412ad12}{Get\+Rechargeable}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Obtém o objeto recarregável na posição especificada. \end{DoxyCompactList}\item 
+\Hypertarget{class_map_aff8e2d6feab4dea63ab4537c0898b303}\label{class_map_aff8e2d6feab4dea63ab4537c0898b303} 
+void {\bfseries Print} ()
+\begin{DoxyCompactList}\small\item\em Imprime o mapa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_map_a2107d47822831fb927575581bc107f85}{Is\+Done}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe reponsável pelo Mapa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Quantidade inicial da largura\\
+\hline
+{\em h} & Quantidade inicial da altura.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_a2a52033bc07a7ccc160285a93484513e}\label{class_map_a2a52033bc07a7ccc160285a93484513e} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Map.\+Map (\begin{DoxyParamCaption}\item[{int}]{w = {\ttfamily 10},  }\item[{int}]{h = {\ttfamily 10},  }\item[{int}]{level = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma nova instância da classe \doxylink{class_map}{Map}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & A largura do mapa.\\
+\hline
+{\em h} & A altura do mapa.\\
+\hline
+{\em level} & O nível do mapa.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_a503c1188981bd56583b4036ef70c67aa}\label{class_map_a503c1188981bd56583b4036ef70c67aa} 
+\index{Map@{Map}!GetJewels@{GetJewels}}
+\index{GetJewels@{GetJewels}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{GetJewels()}{GetJewels()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_jewel}{Jewel}} $>$ Map.\+Get\+Jewels (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Obtém as joias próximas à posição especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & A posição horizontal.\\
+\hline
+{\em y} & A posição vertical.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma lista de joias próximas.
+\end{DoxyReturn}
+\Hypertarget{class_map_a58b5d5bdae42092eec6502666412ad12}\label{class_map_a58b5d5bdae42092eec6502666412ad12} 
+\index{Map@{Map}!GetRechargeable@{GetRechargeable}}
+\index{GetRechargeable@{GetRechargeable}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{GetRechargeable()}{GetRechargeable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_rechargeable}{Rechargeable}}? Map.\+Get\+Rechargeable (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Obtém o objeto recarregável na posição especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & A posição horizontal.\\
+\hline
+{\em y} & A posição vertical.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O objeto recarregável encontrado, ou null se não houver objeto recarregável na posição.
+\end{DoxyReturn}
+\Hypertarget{class_map_ad9a8360a0ab002fb9f53fe4811f8bb19}\label{class_map_ad9a8360a0ab002fb9f53fe4811f8bb19} 
+\index{Map@{Map}!Insert@{Insert}}
+\index{Insert@{Insert}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void Map.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item_map}{Item\+Map}}}]{item,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Insere um item na posição especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & O item a ser inserido.\\
+\hline
+{\em x} & A posição horizontal.\\
+\hline
+{\em y} & A posição vertical.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_a2107d47822831fb927575581bc107f85}\label{class_map_a2107d47822831fb927575581bc107f85} 
+\index{Map@{Map}!IsDone@{IsDone}}
+\index{IsDone@{IsDone}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{IsDone()}{IsDone()}}
+{\footnotesize\ttfamily bool Map.\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Verifica se o mapa foi concluído, ou seja, se não há mais joias no mapa.
+
+\begin{DoxyReturn}{Returns}
+True se o mapa foi concluído, False caso contrário.
+\end{DoxyReturn}
+\Hypertarget{class_map_a6559330c824d7967c0c6eb797583e4b9}\label{class_map_a6559330c824d7967c0c6eb797583e4b9} 
+\index{Map@{Map}!Update@{Update}}
+\index{Update@{Update}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Map.\+Update (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+old,  }\item[{int}]{y\+\_\+old,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Atualiza a posição de um item no mapa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+old} & A posição horizontal atual.\\
+\hline
+{\em y\+\_\+old} & A posição vertical atual.\\
+\hline
+{\em x} & A nova posição horizontal.\\
+\hline
+{\em y} & A nova posição vertical.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+INF-\/0990/Map.\+cs\end{DoxyCompactItemize}

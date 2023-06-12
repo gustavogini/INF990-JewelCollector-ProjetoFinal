@@ -1,0 +1,87 @@
+\doxysection{Radioactive\+Element Class Reference}
+\hypertarget{class_radioactive_element}{}\label{class_radioactive_element}\index{RadioactiveElement@{RadioactiveElement}}
+
+
+Classe que representa um elemento radioativo no mapa.  
+
+
+Inheritance diagram for Radioactive\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_radioactive_element}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_radioactive_element_a7bee055be487c3a86a90ed11f6f06b7f}\label{class_radioactive_element_a7bee055be487c3a86a90ed11f6f06b7f} 
+{\bfseries Radioactive\+Element} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_radioactive_element}{Radioactive\+Element}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_radioactive_element_a86c04cf190c278952623cd3decfa2317}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Interage com o robô, descarregando sua energia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_radioactive_element_a87015743f10c7cf33d862cce612f2dcc}{Recharge}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Descarrega a energia do robô. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item_map}{Item\+Map}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_map_a23e7de63458c5a2d954cacefa9586604}{Item\+Map}} (string Symbol)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_item_map}{Item\+Map}. \end{DoxyCompactList}\item 
+sealed override string \mbox{\hyperlink{class_item_map_abf9189e62cb410e3cae27a6aec700750}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Sobrescreve o método To\+String para retornar o símbolo do item do mapa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_rechargeable_a43eacd53f240550161b5ac3ea8933d63}{Recharge}} (\mbox{\hyperlink{class_robot}{Robot}} r)
+\begin{DoxyCompactList}\small\item\em Recarrega o objeto especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Método responsável por interagir com o objeto usando o robô especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um elemento radioativo no mapa. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_radioactive_element_a86c04cf190c278952623cd3decfa2317}\label{class_radioactive_element_a86c04cf190c278952623cd3decfa2317} 
+\index{RadioactiveElement@{RadioactiveElement}!Interact@{Interact}}
+\index{Interact@{Interact}!RadioactiveElement@{RadioactiveElement}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Radioactive\+Element.\+Interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Interage com o robô, descarregando sua energia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô que interage com o elemento.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{IInteractable}}.
+
+\Hypertarget{class_radioactive_element_a87015743f10c7cf33d862cce612f2dcc}\label{class_radioactive_element_a87015743f10c7cf33d862cce612f2dcc} 
+\index{RadioactiveElement@{RadioactiveElement}!Recharge@{Recharge}}
+\index{Recharge@{Recharge}!RadioactiveElement@{RadioactiveElement}}
+\doxysubsubsection{\texorpdfstring{Recharge()}{Recharge()}}
+{\footnotesize\ttfamily void Radioactive\+Element.\+Recharge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Descarrega a energia do robô. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô a ser descarregado.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_rechargeable_a43eacd53f240550161b5ac3ea8933d63}{Rechargeable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+INF-\/0990/Radioactive\+Element.\+cs\end{DoxyCompactItemize}

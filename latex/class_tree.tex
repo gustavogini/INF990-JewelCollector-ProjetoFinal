@@ -1,0 +1,92 @@
+\doxysection{Tree Class Reference}
+\hypertarget{class_tree}{}\label{class_tree}\index{Tree@{Tree}}
+
+
+Classe responsável pelo item do mapa árvore.  
+
+
+Inheritance diagram for Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tree}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_tree_a207c06111ed2f0d99ab87d4a2e248f32}\label{class_tree_a207c06111ed2f0d99ab87d4a2e248f32} 
+{\bfseries Tree} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_tree}{Tree}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_a980d4169a9a8679c35427a15147c7b4a}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Interage com o robô, recarregando sua energia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tree_ab7546562f99cefb88eb9759a38466ae2}{Recharge}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Recarrega a energia do robô. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_a8835c8c949810ff2d75f031df65097ef}{Obstacle}} (string Symbol)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_obstacle}{Obstacle}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item_map}{Item\+Map}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_map_a23e7de63458c5a2d954cacefa9586604}{Item\+Map}} (string Symbol)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_item_map}{Item\+Map}. \end{DoxyCompactList}\item 
+sealed override string \mbox{\hyperlink{class_item_map_abf9189e62cb410e3cae27a6aec700750}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Sobrescreve o método To\+String para retornar o símbolo do item do mapa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Método responsável por interagir com o objeto usando o robô especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_rechargeable_a43eacd53f240550161b5ac3ea8933d63}{Recharge}} (\mbox{\hyperlink{class_robot}{Robot}} r)
+\begin{DoxyCompactList}\small\item\em Recarrega o objeto especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pelo item do mapa árvore. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tree_a980d4169a9a8679c35427a15147c7b4a}\label{class_tree_a980d4169a9a8679c35427a15147c7b4a} 
+\index{Tree@{Tree}!Interact@{Interact}}
+\index{Interact@{Interact}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Tree.\+Interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Interage com o robô, recarregando sua energia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô que interage com a árvore.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{IInteractable}}.
+
+\Hypertarget{class_tree_ab7546562f99cefb88eb9759a38466ae2}\label{class_tree_ab7546562f99cefb88eb9759a38466ae2} 
+\index{Tree@{Tree}!Recharge@{Recharge}}
+\index{Recharge@{Recharge}!Tree@{Tree}}
+\doxysubsubsection{\texorpdfstring{Recharge()}{Recharge()}}
+{\footnotesize\ttfamily void Tree.\+Recharge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Recarrega a energia do robô. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô a ser recarregado.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_rechargeable_a43eacd53f240550161b5ac3ea8933d63}{Rechargeable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+INF-\/0990/Tree.\+cs\end{DoxyCompactItemize}

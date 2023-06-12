@@ -1,0 +1,98 @@
+\doxysection{Jewel\+Red Class Reference}
+\hypertarget{class_jewel_red}{}\label{class_jewel_red}\index{JewelRed@{JewelRed}}
+
+
+Classe reponsável pela Jóia Vermelha e pontuação.  
+
+
+Inheritance diagram for Jewel\+Red\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_jewel_red}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_jewel_red_a82cf9c65d1bd39b8a772214daf2c8f58}\label{class_jewel_red_a82cf9c65d1bd39b8a772214daf2c8f58} 
+{\bfseries Jewel\+Red} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_jewel_red}{Jewel\+Red}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_red_a8258cd608f2e08728fb5aa5bef17b7de}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Interage com o robô. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jewel_red_a0beab5330373d72cbfab16179f4fead9}{Collect}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Coleta a joia com o robô. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_jewel}{Jewel}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jewel_acc9b3994dd6b26249155b6d28c47af27}{Jewel}} (string Symbol, int \mbox{\hyperlink{class_jewel_a2467da0c2f12bd53ab4c41123ebb6592}{Points}})
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_jewel}{Jewel}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item_map}{Item\+Map}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_map_a23e7de63458c5a2d954cacefa9586604}{Item\+Map}} (string Symbol)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_item_map}{Item\+Map}. \end{DoxyCompactList}\item 
+sealed override string \mbox{\hyperlink{class_item_map_abf9189e62cb410e3cae27a6aec700750}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Sobrescreve o método To\+String para retornar o símbolo do item do mapa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{Interact}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Método responsável por interagir com o objeto usando o robô especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_collectible_ad9dd163378679db8bfb6b1962e8f38b1}{Collect}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em Método responsável por coletar o objeto colecionável com o robô especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_jewel}{Jewel}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtém ou define os pontos associados à joia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe reponsável pela Jóia Vermelha e pontuação. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jewel_red_a0beab5330373d72cbfab16179f4fead9}\label{class_jewel_red_a0beab5330373d72cbfab16179f4fead9} 
+\index{JewelRed@{JewelRed}!Collect@{Collect}}
+\index{Collect@{Collect}!JewelRed@{JewelRed}}
+\doxysubsubsection{\texorpdfstring{Collect()}{Collect()}}
+{\footnotesize\ttfamily void Jewel\+Red.\+Collect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Coleta a joia com o robô. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô que está coletando a joia.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_collectible_ad9dd163378679db8bfb6b1962e8f38b1}{ICollectible}}.
+
+\Hypertarget{class_jewel_red_a8258cd608f2e08728fb5aa5bef17b7de}\label{class_jewel_red_a8258cd608f2e08728fb5aa5bef17b7de} 
+\index{JewelRed@{JewelRed}!Interact@{Interact}}
+\index{Interact@{Interact}!JewelRed@{JewelRed}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Jewel\+Red.\+Interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})}
+
+
+
+Interage com o robô. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & O robô que está interagindo com a joia.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_interactable_ad850c715b1a81c3ce62d5bd1f9a13a1e}{IInteractable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+INF-\/0990/Jewel\+Red.\+cs\end{DoxyCompactItemize}
